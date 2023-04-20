@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Lost Treasure Hunt - Clue 1</title>
+	<link rel="stylesheet" href="gamestyle.css">
+	
+</head>
+<body style="background-image: url(imgs/clue1.gif);background-repeat: repeat;">
+	<header>
+		<h1>Treasure Hunt Find the Diamonds placed in INDIA</h1>
+	</header>
+
+	<main>
+		<h2>Clue 1: The city</h2>
+		<p>You will find the city where the Diamonds were stored:</p>
+		<p>"The city is once called as Bagyanagaram what is the city:"</p>
+		<form id="clue1-form">
+			<label for="clue1-answer">Enter your answer:</label>
+			<input type="text" id="clue1-answer" name="clue1-answer">
+			<button type="submit">Submit</button>
+		</form>
+	</main>
+</body>
+</html>
+
+<script>
+    var clue1Form = document.getElementById("clue1-form");
+
+clue1Form.addEventListener("submit", function(event) {
+	event.preventDefault();
+	var answerInput = document.getElementById("clue1-answer");
+	var answer = answerInput.value.trim().toLowerCase();
+	if (answer === "hyderabad") {
+        alert('Hurray we have found the city! keep going');
+		window.location.href = "clue-2.html";
+	} else {
+		alert("Sorry, that's not correct. Try again!");
+	}
+});
+
+</script>

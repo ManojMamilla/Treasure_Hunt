@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Lost Treasure Hunt - Clue 2</title>
+	<link rel="stylesheet" type="text/css" href="gamestyle.css">
+	
+</head>
+<body style="background-image: url(imgs/clue-2.gif);background-repeat: repeat;">
+	<header>
+		<h1>Treasure Hunt Find the Diamonds placed in INDIA</h1>
+	</header>
+
+	<main>
+		<h2>Clue 2: The Place</h2>
+		<p>In the city of hyderabad the Diamonds are burried near a place Which is built by Muhammad Quli Qutb Shah.</p>
+		<form id="clue2-form">
+			<label for="clue2-answer">Find the acinet place:</label>
+			<input type="text" id="clue2-answer" name="clue2-answer">
+			<button type="submit">Submit</button>
+		</form>
+	</main>
+</body>
+</html>
+
+<script>
+    var clue2Form = document.getElementById("clue2-form");
+
+clue2Form.addEventListener("submit", function(event) {
+	event.preventDefault();
+	var answerInput = document.getElementById("clue2-answer");
+	var answer = answerInput.value.toLowerCase();
+	if (answer === "charminar") {
+        alert('Congratulations! We got the place almost there...');
+		window.location.href = "clue-3.html";
+	} else {
+		alert("Sorry, that's not correct. Try again!");
+	}
+});
+</script>
+

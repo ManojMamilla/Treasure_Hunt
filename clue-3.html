@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Lost Treasure Hunt - Clue 3</title>
+	<link rel="stylesheet" type="text/css" href="gamestyle.css">
+</head>
+<body style="background-image: url(imgs/clue3.gif);background-repeat: repeat;">
+	<header>
+		<h1>Treasure Hunt Find the Diamonds placed in INDIA</h1>
+	</header>
+
+	<main>
+		<h2>Clue 3: The Gift</h2>
+		<p>There is a Lady who know the place of the Diamonds. Gift here the Famous item sold at charminar she will give you a letter:</p>
+		<blockquote>
+			<p>What would you Gift here. Be carefull its a matter of Diamonds</p>
+		</blockquote>
+		<form id="clue3-form">
+			<label for="clue3-answer">What are you going to gift here:</label>
+			<input type="text" id="clue3-answer" name="clue3-answer">
+			<button type="submit">Submit</button>
+		</form>
+	</main>
+</body>
+</html>
+
+<script>
+    var clue3Form = document.getElementById("clue3-form");
+
+clue3Form.addEventListener("submit", function(event) {
+	event.preventDefault();
+	var answerInput = document.getElementById("clue3-answer");
+	var answer = answerInput.value.toLowerCase();
+	if (answer === "bangles") {
+        alert('Congratulations! You solved the clue!');
+		window.location.href = "clue-4.html";
+	} else {
+		alert("I Have warned you its a dead end now no other option!");
+        window.location.href = "over.html";
+	}
+});
+
+</script>

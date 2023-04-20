@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Lost Treasure Hunt</title>
+	<link rel="stylesheet" href="gamestyle.css">
+	
+</head>
+<body>
+	<header>
+		<h1>Treasure Hunt Find the Diamonds placed in INDIA</h1>
+	</header>
+
+	<main>
+		<h2>Welcome to the Diamonds Treasure Hunt</h2>
+		<p>Are you ready to find the Hidden treasure? There are 5 clues that take you to the treasure</p>
+		<h2>Dead Ends</h2>
+		<p>Be carefull!! There are dead ends at clue 3 and clue 5. You will be caught by police if you guess the place wrong.</p>
+		<p>Remember The 3rd clue is not a food and 5th clue is an INDIAN</p>
+		<button id="start-game-button">Start Game</button>
+	</main>
+</body>
+</html>
+<script>
+	var startGameButton = document.getElementById("start-game-button");
+
+startGameButton.addEventListener("click", function() {
+	window.location.href = "clue-1.html";
+});
+
+</script>

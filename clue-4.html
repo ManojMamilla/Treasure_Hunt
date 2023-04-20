@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Lost Treasure Hunt - Clue 4</title>
+	<link rel="stylesheet" type="text/css" href="gamestyle.css">
+	
+</head>
+<body style="background-image: url(imgs/clue4.gif);background-repeat: repeat;">
+	<header>
+		<h1>Treasure Hunt Find the Diamonds placed in INDIA</h1>
+	</header>
+
+	<main>
+		<h2>Clue 4: The Direction</h2>
+		<p>She gave you a piece of paper with a Letter that denotes the Direction:<p>
+		<blockquote>
+			<p>Find the Direction. This is a important step be carefull</p>
+		</blockquote>
+		<p>And one more.. The letter in the paper is a ovel:</p>
+		<p>In which Direction are you thinking to go:</p>
+		
+		<form id="clue4-form">
+			<label for="clue4-answer">Enter your answer:</label>
+			<input type="text" id="clue4-answer" name="clue4-answer">
+			<button type="submit">Submit</button>
+		</form>
+	</main>
+</body>
+</html>
+
+<script>
+    var clue4Form = document.getElementById("clue4-form");
+
+clue4Form.addEventListener("submit", function(event) {
+	event.preventDefault();
+    var uinput = document.getElementById("clue4-answer");
+	var answer = uinput.value.toLowerCase();
+	if (answer === "east") {
+        alert('Congratulations! One more step a head');
+		window.location.href = "clue-5.html";
+	} else {
+		alert("Sorry, that's not correct. Try again!");
+	}
+});
+
+</script>
