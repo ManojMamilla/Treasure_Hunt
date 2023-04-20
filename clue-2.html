@@ -28,7 +28,7 @@
 clue2Form.addEventListener("submit", function(event) {
 	event.preventDefault();
 	var answerInput = document.getElementById("clue2-answer");
-	var answer = answerInput.value.toLowerCase();
+	var answer = answerInput.value.trim().toLowerCase();
 	if (answer === "charminar") {
         alert('Congratulations! We got the place almost there...');
 		window.location.href = "clue-3.html";
