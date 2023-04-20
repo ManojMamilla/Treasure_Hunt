@@ -30,7 +30,7 @@
 clue3Form.addEventListener("submit", function(event) {
 	event.preventDefault();
 	var answerInput = document.getElementById("clue3-answer");
-	var answer = answerInput.value.toLowerCase();
+	var answer = answerInput.value.trim().toLowerCase();
 	if (answer === "bangles") {
         alert('Congratulations! You solved the clue!');
 		window.location.href = "clue-4.html";
