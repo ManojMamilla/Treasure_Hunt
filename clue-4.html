@@ -34,7 +34,7 @@
 clue4Form.addEventListener("submit", function(event) {
 	event.preventDefault();
     var uinput = document.getElementById("clue4-answer");
-	var answer = uinput.value.toLowerCase();
+	var answer = uinput.value.trim().toLowerCase();
 	if (answer === "east") {
         alert('Congratulations! One more step a head');
 		window.location.href = "clue-5.html";
