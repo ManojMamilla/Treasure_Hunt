@@ -7,7 +7,7 @@ This game puts your knowledge and logical thinking skills to the test! Whether y
 1. Logical Thinking skills
 2. General Knowledge
 
-**Possible ways to solve the puzzle**
+**Possible ways to solve the puzzle :**
 You can solve the puzzle and Reach the Treasure if you can find all the clues and get closer to the clue.
     Answers to the clues:
 clue-1 : hyderabad
@@ -16,12 +16,12 @@ clue-3 : bangels
 clue-4 : east
 clue-5 : right
 
-**Dead ends**
+**Dead ends :**
 There are two deadends in this Treasure hunt. Where if you enter the deadend you have to start from the beging agian and your previous attempt will be stored in the DataBase.
 Deadend-1 : There is Deadend at clue-3 Where you will be find a girl how helps to find the treasure if she is upset she calls the police.
 Deadend-2 : There is Deadend at clue-5 Where you will only be One step away to the treasure and if you gusses wrong you should restart the game.
 
-**Login Detalis**
+**Login Detalis :**
 You can signup if you are a new user and start the game.
 If you are wishing to test the game you can login using the below crendtials:
 mail - test@gmail.com
