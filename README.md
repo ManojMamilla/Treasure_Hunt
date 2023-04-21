@@ -14,7 +14,7 @@ clue-1 : hyderabad
 clue-2 : charminar
 clue-3 : bangels
 clue-4 : east
-clue-s : right
+clue-5 : right
 
 **Dead ends**
 There are two deadends in this Treasure hunt. Where if you enter the deadend you have to start from the beging agian and your previous attempt will be stored in the DataBase.
